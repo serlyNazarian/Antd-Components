@@ -1,6 +1,6 @@
 {
   "name": "my-ui-lib-ubicross",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My reusable React UI components",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
