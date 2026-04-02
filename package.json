@@ -1,5 +1,5 @@
 {
-  "name": "my-ui-lib",
+  "name": "my-ui-lib-ubicross",
   "version": "1.0.0",
   "description": "My reusable React UI components",
   "main": "dist/index.js",
