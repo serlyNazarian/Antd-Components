@@ -1,12 +1,20 @@
 {
-  "name": "my-ui-lib-ubicross",
+  "name": "my-ui-lib",
   "version": "1.0.0",
-  "description": "A custom Ant Design component library",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "description": "My reusable React UI components",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "react",
+    "ui",
+    "components"
+  ],
+  "author": "Serly Nazarian",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
