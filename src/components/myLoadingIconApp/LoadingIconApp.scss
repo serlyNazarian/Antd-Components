@@ -1,0 +1,14 @@
+@use '../../styles/Color.scss' as *;
+
+.loading_icon_app_absolute {
+  @include flex-center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  right: 0;
+  top: 0;
+}
+
+.loading_icon_app_center {
+  @include flex-center;
+}

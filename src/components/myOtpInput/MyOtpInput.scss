@@ -1,0 +1,13 @@
+@use '../../styles/Color.scss' as *;
+
+.ant-otp-input-wrapper {
+  flex: 1;
+}
+
+.ant-otp-input {
+  height: $control-height-lg;
+}
+
+.ant-otp {
+  @include full-width;
+}

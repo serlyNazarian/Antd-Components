@@ -1,0 +1,63 @@
+@use '../../styles/Color.scss' as *;
+
+.my_month_date_picker {
+  position: absolute;
+  visibility: hidden;
+  @include no-padding;
+  @include full-width;
+  height: $control-height;
+}
+
+.ant-picker-dropdown .ant-picker-cell::before {
+  height: 54px !important;
+}
+
+.month_picker_card {
+  @include link-cursor;
+  width: 150px;
+  .ant-card-body {
+    height: $control-height;
+  }
+}
+
+.my_month_picker_dropdown {
+  .ant-picker-panel-container {
+    width: 300px;
+  }
+
+  .ant-picker-panel {
+    @include full-width;
+
+    .ant-picker-header {
+      padding: 0 12px;
+
+      button {
+        min-width: 1.4em;
+      }
+    }
+
+    .ant-picker-month-panel {
+      @include full-width;
+    }
+
+    .ant-picker-body {
+      padding: 8px 12px;
+    }
+
+    .ant-picker-content {
+      height: auto;
+      @include full-width;
+
+      .ant-picker-cell {
+        padding: 4px 0;
+
+        .ant-picker-cell-inner {
+          min-width: 54px;
+          height: 54px;
+          line-height: 54px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

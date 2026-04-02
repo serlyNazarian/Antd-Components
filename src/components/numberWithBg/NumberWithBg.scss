@@ -1,0 +1,10 @@
+@use '../../styles/Color.scss' as *;
+
+.number_bg {
+  display: flex;
+  @include size(20px);
+  border-radius: 50px !important;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

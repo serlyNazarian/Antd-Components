@@ -1,0 +1,13 @@
+import Div from '../div/Div';
+import LoadingIconApp from './LoadingIconApp';
+import './LoadingIconApp.scss';
+
+const LoadingIconAppAbsolute = ({ size = 30 }) => {
+  return (
+    <Div className="loading_icon_app_absolute">
+      <LoadingIconApp size={size} />
+    </Div>
+  );
+};
+
+export default LoadingIconAppAbsolute;
