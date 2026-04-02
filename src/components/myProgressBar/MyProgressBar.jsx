@@ -1,7 +1,7 @@
 import { Progress } from 'antd';
-import UtilNumber from '../../utils/UtilNumber';
-import UtilString from '../../utils/UtilString';
 import useMyTheme from '../../theme/useMyTheme';
+import { UtilNumber } from '../../utils/UtilNumber';
+import { UtilString } from '../../utils/UtilString';
 
 const MyProgressBar = ({
   color,

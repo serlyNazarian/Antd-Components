@@ -1,5 +1,5 @@
 import { Flex } from 'antd';
-import UtilString from '../../utils/UtilString';
+import { UtilString } from '../../utils/UtilString';
 
 const MyFlexVertical = ({
   block,

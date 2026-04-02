@@ -1,7 +1,7 @@
 import { forwardRef, useState } from 'react';
 import { Form, InputNumber } from 'antd';
 import { useTranslation } from 'react-i18next';
-import UtilString from '../../utils/UtilString';
+import { UtilString } from '../../utils/UtilString';
 
 const PercentInput = forwardRef(
   (

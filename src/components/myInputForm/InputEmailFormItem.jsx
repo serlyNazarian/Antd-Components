@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { Form, Input } from 'antd';
 import SVGEmail from '../../icons/SVGEmail';
 import { useTranslation } from 'react-i18next';
-import UtilString from '../../utils/UtilString';
+import { UtilString } from '../../utils/UtilString';
 
 const InputEmailFormItem = ({
   label,

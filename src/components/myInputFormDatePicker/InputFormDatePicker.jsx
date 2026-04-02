@@ -1,8 +1,8 @@
-import { useMemo } from "react";
-import { Form, DatePicker } from "antd";
-import { useTranslation } from "react-i18next";
-import UtilString from "../../utils/UtilString";
-import UtilDate from "../../utils/UtilDate";
+import { useMemo } from 'react';
+import { Form, DatePicker } from 'antd';
+import { useTranslation } from 'react-i18next';
+import { UtilDate } from '../../utils/UtilDate';
+import { UtilString } from '../../utils/UtilString';
 
 const InputFormDatePicker = ({
   size,
@@ -20,9 +20,9 @@ const InputFormDatePicker = ({
   disabled = false,
   readOnly = false,
   allowClear = true,
-  name = "DateValue",
+  name = 'DateValue',
   hasFeedback = false,
-  format = "DD/MM/YYYY",
+  format = 'DD/MM/YYYY',
   className = UtilString.EMPTY_STRING,
 }) => {
   const { t } = useTranslation();
@@ -31,7 +31,7 @@ const InputFormDatePicker = ({
     return [
       {
         required: required && !hidden,
-        message: `${label || placeholder} ${t("WORD_IS_REQUIRED")}`,
+        message: `${label || placeholder} ${t('WORD_IS_REQUIRED')}`,
       },
     ];
   }, [hidden, label, placeholder, required, t]);
@@ -71,7 +71,7 @@ const InputFormDatePicker = ({
         variant={variant}
         picker={picker}
         className="full_width"
-        placeholder={placeholder || label || t("WORD_SELECT_DATE")}
+        placeholder={placeholder || label || t('WORD_SELECT_DATE')}
         disabledDate={disabledDate}
         format={format}
         showNow={true}

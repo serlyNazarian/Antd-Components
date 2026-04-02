@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { Form, Input } from 'antd';
 import SVGLock from '../../icons/SVGLock';
 import { useTranslation } from 'react-i18next';
-import UtilString from '../../utils/UtilString';
+import { UtilString } from '../../utils/UtilString';
 
 const InputPasswordConfirmFormItem = ({
   name,

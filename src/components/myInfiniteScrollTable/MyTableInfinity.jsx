@@ -6,7 +6,7 @@ import {
   useEffect,
 } from 'react';
 import { Table } from 'antd';
-import UtilString from '../../utils/UtilString';
+import { UtilString } from '../../utils/UtilString';
 
 const MyTableInfinity = forwardRef(
   (

@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import { Form, Input } from 'antd';
+// import SVGLock from '../../icons/SVGLock';
 import { useTranslation } from 'react-i18next';
-import UtilString from '../../utils/UtilString';
-import SVGLock from '../../icons/SVGLock';
+import { UtilString } from '../../utils/UtilString';
 
 const InputPasswordFormItem = ({
   name,
@@ -12,7 +12,7 @@ const InputPasswordFormItem = ({
   hidden = false,
   required = true,
   allowClear = true,
-  prefix = <SVGLock />,
+  // prefix = <SVGLock />,
   validateComplexity = true,
   className = UtilString.EMPTY_STRING,
   classNameInput = UtilString.EMPTY_STRING,

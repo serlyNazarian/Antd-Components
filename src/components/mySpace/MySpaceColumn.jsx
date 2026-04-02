@@ -1,5 +1,5 @@
 import { Space } from 'antd';
-import UtilString from '../../utils/UtilString';
+import { UtilString } from '../../utils/UtilString';
 
 const MySpaceColumn = ({
   children,

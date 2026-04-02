@@ -2,8 +2,8 @@ import { useState, forwardRef } from 'react';
 import { Dropdown } from 'antd';
 import MySpace from '../mySpace/MySpace';
 import SVGArrow from '../../icons/SVGArrow';
-import UtilArray from '../../utils/UtilArray';
-import UtilString from '../../utils/UtilString';
+import { UtilArray } from '../../utils/UtilArray';
+import { UtilString } from '../../utils/UtilString';
 
 const MyDropDown = forwardRef(
   (

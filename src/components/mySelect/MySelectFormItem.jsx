@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { Form } from 'antd';
 import MySelect from './MySelect';
 import { useTranslation } from 'react-i18next';
-import UtilString from '../../utils/UtilString';
+import { UtilString } from '../../utils/UtilString';
 
 const MySelectFormItem = ({
   name,

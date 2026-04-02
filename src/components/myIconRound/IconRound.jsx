@@ -1,6 +1,6 @@
 import { Avatar, Image } from 'antd';
+import { UtilString } from '../../utils/UtilString';
 import { FileImageOutlined } from '@ant-design/icons';
-import UtilString from '../../utils/UtilString';
 import { getBaseURLShowImage } from '../../utils/UrlHelper';
 
 const IconRound = ({
