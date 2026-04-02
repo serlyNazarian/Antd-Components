@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
-import { Form, Select } from 'antd';
+import { Form } from 'antd';
+import MySelect from './MySelect';
 import { useTranslation } from 'react-i18next';
 import UtilString from '../../utils/UtilString';
-import SVGDropdownArrow from '../../icons/SVGDropdownArrow';
 
 const MySelectFormItem = ({
   name,
@@ -57,18 +57,18 @@ const MySelectFormItem = ({
       validateTrigger="onSubmit"
       className={`${className} ${disableMargins ? 'disable_margins' : ''}`}
     >
-      <Select
+      <MySelect
         {...otherProps}
-        filterOption={(input, option) =>
-          (option?.label ?? '').toLowerCase().includes(input.toLowerCase())
-        }
         style={styleLocal}
-        optionFilterProp="label"
         optionLabelProp="label"
-        onSearch={onSearch}
-        onClear={onSearch}
-        suffixIcon={<SVGDropdownArrow />}
         placeholder={placeholder || label || ''}
+        showSearch={{
+          filter: (input, option) =>
+            (option?.label ?? '').toLowerCase().includes(input.toLowerCase()),
+          optionFilterProp: 'label',
+          onSearch: onSearch,
+        }}
+        onClear={onSearch}
       />
     </Form.Item>
   );

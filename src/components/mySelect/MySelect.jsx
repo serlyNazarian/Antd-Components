@@ -1,14 +1,14 @@
-import { Select } from 'antd';
 import SVGDropdownArrow from '../../icons/SVGDropdownArrow';
+import MySelectWrapper from './MySelectWrapper';
 
 const MySelect = ({ style, width, block, ...otherProps }) => {
   const styleLocal = { ...style, width: block ? '100%' : width || '' };
   return (
-    <Select
+    <MySelectWrapper
       {...otherProps}
       style={styleLocal}
-      suffixIcon={<SVGDropdownArrow />}
-    ></Select>
+      suffixIcon={loading ? undefined : <SVGDropdownArrow />}
+    ></MySelectWrapper>
   );
 };
 
