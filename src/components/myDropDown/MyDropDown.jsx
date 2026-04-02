@@ -1,11 +1,9 @@
 import { useState, forwardRef } from 'react';
 import { Dropdown } from 'antd';
-import SVGArrow from '../../icons/SVGArrow';
 import MySpace from '../mySpace/MySpace';
+import SVGArrow from '../../icons/SVGArrow';
 import UtilArray from '../../utils/UtilArray';
 import UtilString from '../../utils/UtilString';
-import colors from '../../styles/Color.scss';
-import './MyDropDown.scss';
 
 const MyDropDown = forwardRef(
   (
@@ -59,7 +57,7 @@ const MyDropDown = forwardRef(
                 <div className="arrow_bg">
                   <SVGArrow
                     rotate={open ? 180 : 0}
-                    color={colors.primaryColor}
+                    // color={colors.primaryColor}
                   />
                 </div>
               ) : null}

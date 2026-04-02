@@ -1,11 +1,10 @@
 import { memo, useState } from 'react';
 import { DatePicker } from 'antd';
+import MyCard from '../myCard/MyCard';
+import MyFlex from '../myFlex/MyFlex';
 import UtilDate from '../../utils/UtilDate';
 import SVGArrow from '../../icons/SVGArrow';
-import MyCard from '../myCard/MyCard';
 import MyTextBold from '../myText/MyTextBold';
-import MyFlex from '../myFlex/MyFlex';
-import './MyMonthPicker.scss';
 
 const MyMonthPicker = ({ onChange }) => {
   const [date, setDate] = useState(UtilDate.getDateToday());

@@ -1,8 +1,7 @@
 import { Popconfirm } from 'antd';
+import MyButton from './MyButton';
 import { useTranslation } from 'react-i18next';
 import { QuestionCircleOutlined } from '@ant-design/icons';
-import MyButton from './MyButton';
-import colors from '../../styles/Color.module.scss';
 
 const MyButtonConfirmDelete = ({
   icon,
@@ -30,9 +29,9 @@ const MyButtonConfirmDelete = ({
 
   const cancelButtonProps = {
     type: 'outlined',
-    style: {
-      borderColor: colors.newBorderColor,
-    },
+    // style: {
+    //   borderColor: colors.newBorderColor,
+    // },
   };
 
   return (

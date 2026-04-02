@@ -1,7 +1,6 @@
 import { Form, Switch } from 'antd';
-import { InfoCircleOutlined } from '@ant-design/icons';
 import UtilString from '../../utils/UtilString';
-import './MySwitchFormItem.scss';
+import { InfoCircleOutlined } from '@ant-design/icons';
 
 const MySwitchFormItemNumVal = ({
   name,

@@ -2,7 +2,6 @@ import { Progress } from 'antd';
 import UtilNumber from '../../utils/UtilNumber';
 import UtilString from '../../utils/UtilString';
 import useMyTheme from '../../theme/useMyTheme';
-import colors from '../../styles/Color.scss';
 
 const MyProgressBar = ({
   color,
@@ -63,7 +62,7 @@ const MyProgressBar = ({
     borderBottomRightRadius: 100,
     borderTopLeftRadius: overSpentPercentage === 100 ? 100 : 0,
     borderBottomLeftRadius: overSpentPercentage === 100 ? 100 : 0,
-    backgroundColor: isOverspent ? colors.warningColor : 'transparent',
+    // backgroundColor: isOverspent ? colors.warningColor : 'transparent',
   };
 
   let perDivStyle = {
@@ -77,7 +76,7 @@ const MyProgressBar = ({
 
   const progressPercent = percent || per;
 
-  const selectedStrokeColor = token?.colorWhite || colors.whiteColor;
+  // const selectedStrokeColor = token?.colorWhite || colors.whiteColor;
   const selectedTrailColor =
     token?.colorTextQuaternary || 'rgba(255,255,255,0.35)';
 

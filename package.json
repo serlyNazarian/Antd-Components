@@ -16,7 +16,9 @@
   },
   "peerDependencies": {
     "antd": ">=5",
-    "react": ">=18"
+    "react": ">=18",
+    "react-router-dom": "^6",
+    "react-i18next": ">=11"
   },
   "devDependencies": {
     "tsup": "^8.5.1",

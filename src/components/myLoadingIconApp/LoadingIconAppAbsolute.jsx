@@ -1,6 +1,5 @@
 import Div from '../div/Div';
 import LoadingIconApp from './LoadingIconApp';
-import './LoadingIconApp.scss';
 
 const LoadingIconAppAbsolute = ({ size = 30 }) => {
   return (

@@ -1,6 +1,5 @@
-import SVGTableSortIcon from "../../icons/SVGTableSortIcon";
-import MyFlexVertical from "../myFlex/MyFlexVertical";
-import colors from "../../styles/Color.module.scss";
+import SVGTableSortIcon from '../../icons/SVGTableSortIcon';
+import MyFlexVertical from '../myFlex/MyFlexVertical';
 
 const MyDefaultSortArrows = ({ sortOrder }) => {
   const getColor = (order) =>
@@ -8,8 +7,8 @@ const MyDefaultSortArrows = ({ sortOrder }) => {
 
   return (
     <MyFlexVertical gap={5}>
-      <SVGTableSortIcon rotate={"-180"} color={getColor("ascend")} />
-      <SVGTableSortIcon color={getColor("descend")} />
+      <SVGTableSortIcon rotate={'-180'} color={getColor('ascend')} />
+      <SVGTableSortIcon color={getColor('descend')} />
     </MyFlexVertical>
   );
 };

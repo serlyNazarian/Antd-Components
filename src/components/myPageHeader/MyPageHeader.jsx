@@ -1,11 +1,11 @@
-import SVGArrow from '../../icons/SVGArrow';
 import MyText from '../myText/MyText';
-import SVGMenu from '../../icons/SVGMenu';
-import useWindowSize from '../../utils/useWindowSize';
 import MyFlex from '../myFlex/MyFlex';
-import useMyTheme from '../../theme/useMyTheme';
+import SVGMenu from '../../icons/SVGMenu';
+import SVGArrow from '../../icons/SVGArrow';
 import MyTextBold from '../myText/MyTextBold';
-import colors from '../../styles/Color.scss';
+import useMyTheme from '../../theme/useMyTheme';
+import useWindowSize from '../../utils/useWindowSize';
+import colors from '../styles/Color.module.scss';
 
 const MyPageHeader = ({
   title,

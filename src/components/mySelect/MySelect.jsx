@@ -1,5 +1,5 @@
-import SVGDropdownArrow from '../../icons/SVGDropdownArrow';
 import MySelectWrapper from './MySelectWrapper';
+import SVGDropdownArrow from '../icons/SVGDropdownArrow';
 
 const MySelect = ({ style, width, block, ...otherProps }) => {
   const styleLocal = { ...style, width: block ? '100%' : width || '' };

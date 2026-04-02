@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { Segmented, Form } from 'antd';
 import UtilString from '../../utils/UtilString';
-import './MySegmentedFormItem.scss';
 
 const MySegmentedFormItem = ({
   name,

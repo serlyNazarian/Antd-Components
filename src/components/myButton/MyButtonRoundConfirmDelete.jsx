@@ -3,7 +3,6 @@ import MyButton from './MyButton';
 import { Popconfirm } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { QuestionCircleOutlined } from '@ant-design/icons';
-import colors from '../../styles/Color.module.scss';
 
 const MyButtonRoundConfirmDelete = forwardRef(
   (
@@ -19,9 +18,9 @@ const MyButtonRoundConfirmDelete = forwardRef(
 
     const cancelButtonProps = {
       type: 'outlined',
-      style: {
-        borderColor: colors.newBorderColor,
-      },
+      // style: {
+      //   borderColor: colors.newBorderColor,
+      // },
     };
 
     return (

@@ -1,7 +1,6 @@
-import { LoadingOutlined } from '@ant-design/icons';
+import Div from '../myDiv/Div';
 import UtilString from '../../utils/UtilString';
-import Div from '../div/Div';
-import './LoadingIconApp.scss';
+import { LoadingOutlined } from '@ant-design/icons';
 
 const LoadingIconApp = ({ size, className = UtilString.EMPTY_STRING }) => {
   return (

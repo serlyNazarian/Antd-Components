@@ -1,5 +1,4 @@
 import { Typography } from 'antd';
-import colors from '../../styles/Color.scss';
 
 const { Text } = Typography;
 
@@ -8,7 +7,7 @@ const MyTextSecondary = ({
   style,
   children,
   fontSize = 14,
-  color = colors.textSecondary,
+  // color = colors.textSecondary,
 }) => {
   return (
     <Text

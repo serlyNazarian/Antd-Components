@@ -1,5 +1,4 @@
-import { Segmented } from "antd";
-import "./MySegmentedForm.scss";
+import { Segmented } from 'antd';
 
 const MySegmented = ({ color, style, ...otherProps }) => {
   return (

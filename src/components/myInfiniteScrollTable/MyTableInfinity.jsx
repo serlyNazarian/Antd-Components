@@ -7,7 +7,6 @@ import {
 } from 'react';
 import { Table } from 'antd';
 import UtilString from '../../utils/UtilString';
-import './MyTableInfinity.scss';
 
 const MyTableInfinity = forwardRef(
   (

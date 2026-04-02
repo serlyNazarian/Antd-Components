@@ -1,16 +1,14 @@
-import MyFlex from "../myFlex/MyFlex";
-import MyText from "../myText/MyText";
-import MyTextBold from "../myText/MyTextBold";
-import colors from "../../styles/Color.module.scss";
-import "./NumberWithBg.scss";
+import MyFlex from '../myFlex/MyFlex';
+import MyText from '../myText/MyText';
+import MyTextBold from '../myText/MyTextBold';
 
 const NumberWithBgAndTitle = ({
   title,
   number,
   gap = 8,
-  bgColor = colors.primaryColor,
-  numbColor = colors.whiteColor,
-  titleColor = colors.primaryColor,
+  // bgColor = colors.primaryColor,
+  // numbColor = colors.whiteColor,
+  // titleColor = colors.primaryColor,
 }) => {
   return (
     <MyFlex gap={gap}>

@@ -1,7 +1,6 @@
 import { Collapse } from 'antd';
 import SVGArrow from '../../icons/SVGArrow';
 import LoadingIconApp from '../loadingIconApp/LoadingIconApp';
-import '../myDropDown/MyDropDown.scss';
 
 const MyCollapse = ({
   style,

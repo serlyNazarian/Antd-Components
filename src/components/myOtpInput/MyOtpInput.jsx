@@ -1,5 +1,4 @@
 import { Input } from 'antd';
-import './MyOtpInput.scss';
 
 const MyOtpInput = ({
   onComplete,

@@ -1,5 +1,4 @@
 import { Statistic } from 'antd';
-import colors from '../../styles/Color.scss';
 
 const MyStatisticPrimary = ({
   style,
@@ -11,7 +10,7 @@ const MyStatisticPrimary = ({
   ...otherProps
 }) => {
   let contentStyle = {
-    color: colors.primaryColor,
+    // color: colors.primaryColor,
     fontSize: fontSize,
     textAlign: textAlign,
     fontWeight: fontWeight,
