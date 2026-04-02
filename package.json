@@ -1,6 +1,6 @@
 {
   "name": "my-ui-lib-ubicross",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "My reusable React UI components",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -29,7 +29,6 @@
     "react-i18next": ">=11"
   },
   "devDependencies": {
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "tsup": "^8.5.1"
   }
 }
