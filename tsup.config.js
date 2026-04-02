@@ -1,11 +1,9 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ["src/index.js"],
-  format: ["cjs", "esm"],
+  entry: ['src/index.js'],
+  format: ['cjs', 'esm'],
+  dts: false,
+  sourcemap: true,
   clean: true,
-  external: ["react", "antd"],
-  esbuildOptions(options) {
-    options.jsx = "automatic";
-  },
 });
