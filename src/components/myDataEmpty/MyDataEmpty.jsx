@@ -1,16 +1,11 @@
 import { Empty } from 'antd';
-import MyFlex from '../myFlex/MyFlex';
+import MyFlexCenter from '../myFlex/MyFlexCenter';
 
 const MyDataEmpty = ({ description = '' }) => {
   return (
-    <MyFlex
-      style={{ minHeight: 500, height: '100%' }}
-      justify="center"
-      align="center"
-      block
-    >
+    <MyFlexCenter style={{ minHeight: 500, height: '100%' }}>
       <Empty description={description} />
-    </MyFlex>
+    </MyFlexCenter>
   );
 };
 

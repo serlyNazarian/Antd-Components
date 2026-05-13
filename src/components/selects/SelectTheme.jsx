@@ -1,24 +1,30 @@
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useMemo } from 'react';
 import MySelect from '../mySelect/MySelect';
-import UtilArray from '../../utils/UtilArray';
-import UsersActions from '../../actions/UsersActions';
+import { useTranslation } from 'react-i18next';
 
-const SelectTheme = ({ ...otherProps }) => {
+export const THEME_VALUES = {
+  LIGHT: 'light',
+  DARK: 'dark',
+  SYSTEM: 'system',
+};
+
+const SelectTheme = ({
+  lightValue = THEME_VALUES.LIGHT,
+  darkValue = THEME_VALUES.DARK,
+  systemValue = THEME_VALUES.SYSTEM,
+  ...otherProps
+}) => {
   const { t } = useTranslation();
 
-  const [list, setList] = useState(UtilArray.EMPTY_ARRAY);
-
-  useEffect(() => {
-    let data = [
-      { label: t('WORD_THEME_LIGHT'), value: UsersActions.THEME.LIGHT },
-      { label: t('WORD_THEME_DARK'), value: UsersActions.THEME.DARK },
-      { label: t('WORD_THEME_SYSTEM'), value: UsersActions.THEME.SYSTEM },
+  const selectOptions = useMemo(() => {
+    return [
+      { label: t('WORD_THEME_LIGHT'), value: lightValue },
+      { label: t('WORD_THEME_DARK'), value: darkValue },
+      { label: t('WORD_THEME_SYSTEM'), value: systemValue },
     ];
-    setList(data);
-  }, [t]);
+  }, [darkValue, lightValue, systemValue, t]);
 
-  return <MySelect {...otherProps} options={list} />;
+  return <MySelect {...otherProps} options={selectOptions} />;
 };
 
 export default SelectTheme;

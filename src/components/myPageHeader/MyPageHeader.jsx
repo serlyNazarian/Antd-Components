@@ -1,11 +1,9 @@
+import { theme } from 'antd';
+import { MenuOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import MyText from '../myText/MyText';
 import MyFlex from '../myFlex/MyFlex';
-import SVGMenu from '../../icons/SVGMenu';
-import SVGArrow from '../../icons/SVGArrow';
 import MyTextBold from '../myText/MyTextBold';
-import useMyTheme from '../../theme/useMyTheme';
-import useWindowSize from '../../utils/useWindowSize';
-import colors from '../styles/Color.module.scss';
+import useWindowSize from '../../hooks/UseWindowSize';
 
 const MyPageHeader = ({
   title,
@@ -14,20 +12,24 @@ const MyPageHeader = ({
   extraLeft,
   extraRight,
   fontSize = 20,
+  iconColor,
 }) => {
+  const { token } = theme.useToken();
   const { isMobile } = useWindowSize();
-  const { isDark } = useMyTheme();
 
-  let color = isDark ? colors.whiteColor : colors.blueishColor;
+  const backIconColor = iconColor || token.colorText;
 
   return (
     <MyFlex align="center" justify="space-between" style={{ minHeight: 50 }}>
       <MyFlex>
-        {Boolean(isMobile) && <SVGMenu />}
+        {Boolean(isMobile) && <MenuOutlined style={{ cursor: 'pointer' }} />}
         <MyFlex align="center">
           {onBack && (
-            <MyText className="arrow_icon">
-              <SVGArrow onClick={onBack} rotate={90} color={color} />
+            <MyText className="arrow_icon" style={{ cursor: 'pointer' }}>
+              <ArrowRightOutlined
+                onClick={onBack}
+                style={{ color: backIconColor }}
+              />
             </MyText>
           )}
           {title && <MyTextBold fontSize={fontSize}>{title}</MyTextBold>}

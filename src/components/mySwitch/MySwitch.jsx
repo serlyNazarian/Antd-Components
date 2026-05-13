@@ -1,12 +1,12 @@
 import { Switch } from 'antd';
-import MySpace from '../mySpace/MySpace';
+import MyFlexVertical from '../myFlex/MyFlexVertical';
 
 const MySwitch = ({ label, ...otherProps }) => {
   return (
-    <MySpace direction="vertical">
+    <MyFlexVertical>
       {label ? <span>{label}</span> : null}
       <Switch {...otherProps} />
-    </MySpace>
+    </MyFlexVertical>
   );
 };
 

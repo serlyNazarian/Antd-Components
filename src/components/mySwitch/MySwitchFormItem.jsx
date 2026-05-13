@@ -18,7 +18,6 @@ const MySwitchFormItem = ({
       valuePropName="checked"
       layout="horizontal"
       required={required}
-      className={`my_switch_row ${className}`}
       tooltip={
         tooltipTitle
           ? {

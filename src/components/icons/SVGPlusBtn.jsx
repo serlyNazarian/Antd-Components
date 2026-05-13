@@ -1,19 +1,12 @@
 import { memo } from 'react';
 import MyIcon from '../myIcon/MyIcon';
-// import useMyTheme from "../theme/useMyTheme";
 
 const SVGIcon = ({ size }) => {
-  // const { token } = useMyTheme();
-
-  // const iconColor =
-  //   type === "primary" ? token.colorTextLightSolid : token.colorText;
-
   return (
     <svg
       width={size}
       height={size}
       viewBox="0 0 14 14"
-      // fill={iconColor}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

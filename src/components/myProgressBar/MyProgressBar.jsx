@@ -1,5 +1,4 @@
-import { Progress } from 'antd';
-import useMyTheme from '../../theme/useMyTheme';
+import { Progress, theme } from 'antd';
 import { UtilNumber } from '../../utils/UtilNumber';
 import { UtilString } from '../../utils/UtilString';
 
@@ -72,11 +71,11 @@ const MyProgressBar = ({
     height: '130%',
   };
 
-  const { token } = useMyTheme();
+  const { token } = theme.useToken();
 
   const progressPercent = percent || per;
 
-  // const selectedStrokeColor = token?.colorWhite || colors.whiteColor;
+  const selectedStrokeColor = token?.colorWhite || '#ffffff';
   const selectedTrailColor =
     token?.colorTextQuaternary || 'rgba(255,255,255,0.35)';
 

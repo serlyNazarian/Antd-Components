@@ -1,9 +1,9 @@
 import { memo, useState } from 'react';
 import { DatePicker } from 'antd';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import MyCard from '../myCard/MyCard';
 import MyFlex from '../myFlex/MyFlex';
 import UtilDate from '../../utils/UtilDate';
-import SVGArrow from '../../icons/SVGArrow';
 import MyTextBold from '../myText/MyTextBold';
 
 const MyMonthPicker = ({ onChange }) => {
@@ -55,8 +55,12 @@ const MyMonthPicker = ({ onChange }) => {
         justify="space-between"
         className="full_height"
       >
-        <div className="arrow_bg" onClick={handleOnClickFirst}>
-          <SVGArrow rotate={90} />
+        <div
+          className="arrow_bg"
+          onClick={handleOnClickFirst}
+          style={{ cursor: 'pointer' }}
+        >
+          <LeftOutlined />
         </div>
         <div onClick={() => setDatePickerOpen(true)}>
           <MyTextBold fontSize={15}>
@@ -82,7 +86,7 @@ const MyMonthPicker = ({ onChange }) => {
             cursor: isNextDisabled ? 'not-allowed' : 'pointer',
           }}
         >
-          <SVGArrow rotate={-90} />
+          <RightOutlined />
         </div>
       </MyFlex>
     </MyCard>

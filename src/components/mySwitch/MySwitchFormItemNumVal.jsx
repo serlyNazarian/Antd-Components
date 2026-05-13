@@ -26,7 +26,6 @@ const MySwitchFormItemNumVal = ({
         checked: value === checkedValue,
       })}
       hidden={hidden}
-      className={`my_switch_row ${className}`}
       tooltip={
         tooltipTitle
           ? {

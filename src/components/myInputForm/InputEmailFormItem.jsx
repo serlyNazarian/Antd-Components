@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Form, Input } from 'antd';
-import SVGEmail from '../../icons/SVGEmail';
+import { MailOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import { UtilString } from '../../utils/UtilString';
 
@@ -13,7 +13,7 @@ const InputEmailFormItem = ({
   required = true,
   bordered = true,
   allowClear = true,
-  prefix = <SVGEmail />,
+  prefix = <MailOutlined />,
   validateTrigger = 'onSubmit',
   classNameInput = UtilString.EMPTY_STRING,
   ...otherProps

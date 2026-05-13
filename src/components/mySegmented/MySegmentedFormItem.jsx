@@ -37,7 +37,6 @@ const MySegmentedFormItem = ({
         options={options}
         onChange={onChange}
         disabled={disabled}
-        className={`my_segment ${color}`}
       />
     </Form.Item>
   );

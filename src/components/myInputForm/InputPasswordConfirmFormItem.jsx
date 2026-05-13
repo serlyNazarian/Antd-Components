@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Form, Input } from 'antd';
-import SVGLock from '../../icons/SVGLock';
+import { LockOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import { UtilString } from '../../utils/UtilString';
 
@@ -13,7 +13,7 @@ const InputPasswordConfirmFormItem = ({
   required = true,
   allowClear = true,
   hasFeedback = false,
-  prefix = <SVGLock />,
+  prefix = <LockOutlined />,
   className = UtilString.EMPTY_STRING,
   classNameInput = UtilString.EMPTY_STRING,
 }) => {

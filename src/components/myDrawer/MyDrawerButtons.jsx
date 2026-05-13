@@ -1,7 +1,7 @@
+import MyFlex from '../myFlex/MyFlex';
 import { useTranslation } from 'react-i18next';
 import MyButtonMain from '../myButton/MyButtonMain';
 import MyButtonSecondary from '../myButton/MyButtonSecondary';
-import MyFlex from '../myFlex/MyFlex';
 
 const MyDrawerButtons = ({ closeDrawer, formName }) => {
   const { t } = useTranslation();

@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
+import { SearchOutlined } from '@ant-design/icons';
 import InputText from './InputText';
-import SVGSearchIcon from '../../icons/SVGSearchIcon';
-import useWindowSize from '../../utils/useWindowSize';
+import useWindowSize from '../../hooks/UseWindowSize';
 
 const MySearchInput = forwardRef(({ ...otherProps }, ref) => {
   const { isMobile } = useWindowSize();
@@ -10,7 +10,7 @@ const MySearchInput = forwardRef(({ ...otherProps }, ref) => {
     <InputText
       {...otherProps}
       ref={ref}
-      prefix={<SVGSearchIcon style={{ marginRight: 2 }} />}
+      prefix={<SearchOutlined style={{ marginRight: 2 }} />}
       style={{ minWidth: isMobile ? '' : 260, maxWidth: isMobile ? 130 : '' }}
     />
   );

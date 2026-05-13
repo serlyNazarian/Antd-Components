@@ -1,7 +1,7 @@
 import { useState, forwardRef } from 'react';
 import { Dropdown } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
 import MySpace from '../mySpace/MySpace';
-import SVGArrow from '../../icons/SVGArrow';
 import { UtilArray } from '../../utils/UtilArray';
 import { UtilString } from '../../utils/UtilString';
 
@@ -55,9 +55,11 @@ const MyDropDown = forwardRef(
             <div style={{ marginTop: disableMarginTop ? 0 : 5 }}>
               {arrow ? (
                 <div className="arrow_bg">
-                  <SVGArrow
-                    rotate={open ? 180 : 0}
-                    // color={colors.primaryColor}
+                  <DownOutlined
+                    style={{
+                      transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.2s',
+                    }}
                   />
                 </div>
               ) : null}

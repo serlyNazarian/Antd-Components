@@ -1,10 +1,10 @@
 import { forwardRef, useImperativeHandle, useState } from 'react';
 import { Drawer } from 'antd';
+import { FilterOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
-import SVGFilterOutlined from '../../icons/SVGFilterOutlined';
-import MyButtonFilled from '../myButton/MyButtonFilled';
 import MyDrawerButtons from './MyDrawerButtons';
-import useWindowSize from '../../utils/useWindowSize';
+import useWindowSize from '../../hooks/UseWindowSize';
+import MyButtonFilled from '../myButton/MyButtonFilled';
 
 const MyDrawerFilter = forwardRef(
   ({ children, formName, loading, ...otherProps }, ref) => {
@@ -31,7 +31,7 @@ const MyDrawerFilter = forwardRef(
         <MyButtonFilled
           onClick={showDrawer}
           label={isMobile ? null : t('WORD_MORE_FILTERS')}
-          icon={<SVGFilterOutlined />}
+          icon={<FilterOutlined />}
           loading={loading}
           width={isMobile ? 50 : 130}
         />

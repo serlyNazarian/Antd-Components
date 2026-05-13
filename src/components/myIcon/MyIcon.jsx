@@ -1,6 +1,5 @@
 import { cloneElement, memo } from 'react';
 import Icon from '@ant-design/icons';
-// import useMyTheme from "../../theme/useMyTheme";
 
 const MyIcon = ({
   icon,
@@ -11,8 +10,6 @@ const MyIcon = ({
   size = 28,
   ...otherProps
 }) => {
-  // const { token } = useMyTheme();
-
   return (
     <Icon
       style={style}
@@ -20,7 +17,6 @@ const MyIcon = ({
         cloneElement(icon, {
           size: size,
           rotate: rotate,
-          // color: color || token.colorText,
           color: color,
           ...otherProps,
         })

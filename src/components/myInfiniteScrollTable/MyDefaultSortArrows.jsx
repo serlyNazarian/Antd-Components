@@ -1,14 +1,11 @@
-import SVGTableSortIcon from '../../icons/SVGTableSortIcon';
+import { SortAscendingOutlined } from '@ant-design/icons';
 import MyFlexVertical from '../myFlex/MyFlexVertical';
 
 const MyDefaultSortArrows = ({ sortOrder }) => {
-  const getColor = (order) =>
-    sortOrder.sortOrder === order ? colors.bluishColor : colors.secondaryText;
-
   return (
     <MyFlexVertical gap={5}>
-      <SVGTableSortIcon rotate={'-180'} color={getColor('ascend')} />
-      <SVGTableSortIcon color={getColor('descend')} />
+      <SortAscendingOutlined rotate={'-180'} />
+      <SortAscendingOutlined />
     </MyFlexVertical>
   );
 };

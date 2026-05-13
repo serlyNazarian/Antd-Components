@@ -1,6 +1,6 @@
 import Div from '../div/Div';
 import LoadingIconApp from './LoadingIconApp';
-import useWindowSize from '../../utils/useWindowSize';
+import useWindowSize from '../../hooks/UseWindowSize';
 
 const LoadingIconAppCenter = ({ size = 30, divHeight, style }) => {
   const { height } = useWindowSize();
