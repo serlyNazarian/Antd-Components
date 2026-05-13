@@ -1,8 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
-import { Modal } from 'antd';
+import { Modal, Spin } from 'antd';
 import MyTextBold from '../myText/MyTextBold';
 import MyModalFooter from './MyModalFooter';
-import LoadingIconAppCenter from '../loadingIconApp/LoadingIconAppCenter';
 
 const MyModal = forwardRef(
   (
@@ -92,7 +91,16 @@ const MyModal = forwardRef(
           }
         >
           {loading ? (
-            <LoadingIconAppCenter divHeight={height - 150} size={30} />
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: height - 150,
+              }}
+            >
+              <Spin size="large" />
+            </div>
           ) : (
             <div
               style={{

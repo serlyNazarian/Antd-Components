@@ -6,6 +6,9 @@ export default defineConfig({
   dts: false,
   sourcemap: true,
   clean: true,
+  loader: {
+    '.js': 'jsx',
+  },
   esbuildOptions(options) {
     options.jsx = 'automatic';
   },

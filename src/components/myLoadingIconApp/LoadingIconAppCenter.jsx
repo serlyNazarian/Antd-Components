@@ -1,4 +1,4 @@
-import Div from '../div/Div';
+import Div from '../myDiv/Div';
 import LoadingIconApp from './LoadingIconApp';
 import useWindowSize from '../../hooks/UseWindowSize';
 

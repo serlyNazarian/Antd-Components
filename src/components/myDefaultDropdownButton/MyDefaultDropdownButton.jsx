@@ -1,7 +1,6 @@
 import { Dropdown } from 'antd';
-import SVGDropdownArrow from '../../icons/SVGDropdownArrow';
-import UtilArray from '../../utils/UtilArray';
-import MyDefaultCenteredColumn from '../infiniteScrollTable/MyDefaultCenteredColumn';
+import { DownOutlined } from '@ant-design/icons';
+import { UtilArray } from '../../utils/UtilArray';
 
 const MyDefaultDropdownButton = ({
   size,
@@ -22,16 +21,16 @@ const MyDefaultDropdownButton = ({
         items: dropdownMenuItems,
         onClick: onItemClick,
       }}
-      icon={<SVGDropdownArrow color="white" />}
+      icon={<DownOutlined style={{ color: 'white' }} />}
       trigger={['click']}
       size={size}
     >
       <div style={{ width: width }}>
         {titleIcon ? (
-          <MyDefaultCenteredColumn gap={10}>
+          <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
             {titleIcon}
             {title}
-          </MyDefaultCenteredColumn>
+          </div>
         ) : (
           title
         )}

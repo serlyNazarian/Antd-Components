@@ -1,4 +1,4 @@
-import Div from '../div/Div';
+import Div from '../myDiv/Div';
 import LoadingIconApp from './LoadingIconApp';
 
 const LoadingIconAppAbsolute = ({ size = 30 }) => {
