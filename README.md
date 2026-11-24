@@ -43,6 +43,44 @@ function App() {
 }
 ```
 
+## Lucide icons
+
+Import the icons you need from `my-ui-lib-ubicross/icons`. Installing the
+library also installs `lucide-react`.
+
+```jsx
+import { MyButton } from 'my-ui-lib-ubicross';
+import { Plus } from 'my-ui-lib-ubicross/icons';
+
+<MyButton type="primary" icon={<Plus size={16} aria-hidden="true" />}>
+  Add item
+</MyButton>;
+```
+
+## Shared theme defaults
+
+Import `uiTheme` and pass it to your app's Ant Design `ConfigProvider`. The
+preset defines corner radii, control height, and button padding. Each app can
+choose its own palette and theme algorithm.
+
+```jsx
+import { ConfigProvider } from 'antd';
+import { uiTheme } from 'my-ui-lib-ubicross';
+
+function AppRoot() {
+  return (
+    <ConfigProvider
+      theme={{
+        ...uiTheme,
+        token: { ...uiTheme.token, colorPrimary: '#7c3aed' },
+      }}
+    >
+      <App />
+    </ConfigProvider>
+  );
+}
+```
+
 ## Utility Usage Across Projects
 
 You can import utilities directly from the package root.
