@@ -246,10 +246,17 @@ npm run dev
 
 ```
 src/
-├── components/     # React components
-├── hooks/          # Custom React hooks
-├── utils/          # Utility functions
-└── index.js        # Exports
+├── components/
+│   ├── button/
+│   ├── card/
+│   ├── input-form/
+│   ├── select/
+│   └── ...
+├── hooks/
+├── theme/
+├── utils/
+├── icons.js
+└── index.js
 ```
 
 ## Dependencies

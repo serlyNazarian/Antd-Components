@@ -1,136 +1,134 @@
-export { default as MyAlert } from './myAlert/MyAlert';
+export { default as MyAlert } from './alert/MyAlert';
 
-export { default as MyButton } from './myButton/MyButton';
-export { default as MyButtonConfirm } from './myButton/MyButtonConfirm';
-export { default as MyButtonConfirmDelete } from './myButton/MyButtonConfirmDelete';
-export { default as MyButtonDanger } from './myButton/MyButtonDanger';
-export { default as MyButtonDelete } from './myButton/MyButtonDelete';
-export { default as MyButtonFilled } from './myButton/MyButtonFilled';
-export { default as MyButtonLink } from './myButton/MyButtonLink';
-export { default as MyButtonMain } from './myButton/MyButtonMain';
-export { default as MyButtonPageHeader } from './myButton/MyButtonPageHeader';
-export { default as MyButtonRound } from './myButton/MyButtonRound';
-export { default as MyButtonRoundConfirmDelete } from './myButton/MyButtonRoundConfirmDelete';
-export { default as MyButtonSecondary } from './myButton/MyButtonSecondary';
-export { default as MyButtonText } from './myButton/MyButtonText';
+export { default as MyButton } from './button/MyButton';
+export { default as MyButtonConfirm } from './button/MyButtonConfirm';
+export { default as MyButtonConfirmDelete } from './button/MyButtonConfirmDelete';
+export { default as MyButtonDanger } from './button/MyButtonDanger';
+export { default as MyButtonDelete } from './button/MyButtonDelete';
+export { default as MyButtonFilled } from './button/MyButtonFilled';
+export { default as MyButtonLink } from './button/MyButtonLink';
+export { default as MyButtonMain } from './button/MyButtonMain';
+export { default as MyButtonPageHeader } from './button/MyButtonPageHeader';
+export { default as MyButtonRound } from './button/MyButtonRound';
+export { default as MyButtonRoundConfirmDelete } from './button/MyButtonRoundConfirmDelete';
+export { default as MyButtonSecondary } from './button/MyButtonSecondary';
+export { default as MyButtonText } from './button/MyButtonText';
 
-export { default as MyButtonCopy } from './myButtonCopy/MyButtonCopy';
+export { default as MyButtonCopy } from './button-copy/MyButtonCopy';
 
-export { default as MyCard } from './myCard/MyCard';
-export { default as MyCardTransparent } from './myCard/MyCardTransparent';
+export { default as MyCard } from './card/MyCard';
+export { default as MyCardTransparent } from './card/MyCardTransparent';
 
-export { default as CheckBoxFormItem } from './myCheckbox/CheckBoxFormItem';
-export { default as MyCheckBox } from './myCheckbox/MyCheckBox';
+export { default as CheckBoxFormItem } from './checkbox/CheckBoxFormItem';
+export { default as MyCheckBox } from './checkbox/MyCheckBox';
 
-export { default as MyColorPicker } from './myColorPicker/MyColorPicker';
+export { default as MyColorPicker } from './color-picker/MyColorPicker';
 
-export { default as CopyableTextBg } from './myCopyableTextBg/CopyableTextBg';
+export { default as CopyableTextBg } from './copyable-text-bg/CopyableTextBg';
 
-export { default as MyDataEmpty } from './myDataEmpty/MyDataEmpty';
+export { default as MyDataEmpty } from './data-empty/MyDataEmpty';
 
-export { default as MyDefaultDropDown } from './myDefaultDropDown/MyDefaultDropDown';
-export { default as MyDefaultDropdownButton } from './myDefaultDropdownButton/MyDefaultDropdownButton';
+export { default as MyDefaultDropdownButton } from './default-dropdown-button/MyDefaultDropdownButton';
 
-export { default as MyDefaultPageHeader } from './myDefaultPageHeader/MyDefaultPageHeader';
-// export { default as MyDefaultPageLayout } from './myDefaultPageLayout/MyDefaultPageLayout'; // requires react-helmet
-// export { default as MyDefaultPageWrapper } from './myDefaultPageLayout/MyDefaultPageWrapper'; // requires react-helmet
+export { default as MyDefaultPageHeader } from './default-page-header/MyDefaultPageHeader';
+// export { default as MyDefaultPageLayout } from './default-page-layout/MyDefaultPageLayout'; // requires react-helmet
+// export { default as MyDefaultPageWrapper } from './default-page-layout/MyDefaultPageWrapper'; // requires react-helmet
 
-export { default as Div } from './myDiv/Div';
+export { default as Div } from './div/Div';
 
-export { default as MyDivider } from './myDivider/MyDivider';
-export { default as MyDividerOr } from './myDivider/MyDividerOr';
-export { default as MyDividerSmall } from './myDivider/MyDividerSmall';
+export { default as MyDivider } from './divider/MyDivider';
+export { default as MyDividerOr } from './divider/MyDividerOr';
+export { default as MyDividerSmall } from './divider/MyDividerSmall';
 
-export { default as MyDrawer } from './myDrawer/MyDrawer';
-export { default as MyDrawerButtons } from './myDrawer/MyDrawerButtons';
-export { default as MyDrawerFilter } from './myDrawer/MyDrawerFilter';
+export { default as MyDrawer } from './drawer/MyDrawer';
+export { default as MyDrawerButtons } from './drawer/MyDrawerButtons';
+export { default as MyDrawerFilter } from './drawer/MyDrawerFilter';
 
-export { default as MyDropDown } from './myDropDown/MyDropDown';
+export { default as MyDropDown } from './dropdown/MyDropDown';
 
-export { default as MyFlex } from './myFlex/MyFlex';
-export { default as MyFlexCenter } from './myFlex/MyFlexCenter';
-export { default as MyFlexVertical } from './myFlex/MyFlexVertical';
+export { default as MyFlex } from './flex/MyFlex';
+export { default as MyFlexCenter } from './flex/MyFlexCenter';
+export { default as MyFlexVertical } from './flex/MyFlexVertical';
 
-export { default as FormApp } from './myFormApp/FormApp';
-// export { default as MyCaptcha } from './myGoogleCaptcha/MyCaptcha'; // requires react-google-recaptcha
+export { default as FormApp } from './form-app/FormApp';
+// export { default as MyCaptcha } from './google-captcha/MyCaptcha'; // requires react-google-recaptcha
 
-export { default as MyIcon } from './myIcon/MyIcon';
+export { default as MyIcon } from './icon/MyIcon';
 
-// export { default as IconRound } from './myIconRound/IconRound'; // requires UrlHelper util
+// export { default as IconRound } from './icon-round/IconRound'; // requires UrlHelper util
 
-export { default as MyImage } from './myImage/MyImage';
+export { default as MyImage } from './image/MyImage';
 
-export { default as MyDefaultCenteredColumn } from './myInfiniteScrollTable/MyDefaultCenteredColumn';
-export { default as MyDefaultSortArrows } from './myInfiniteScrollTable/MyDefaultSortArrows';
-export { default as MyTableInfinity } from './myInfiniteScrollTable/MyTableInfinity';
+export { default as MyDefaultCenteredColumn } from './infinite-scroll-table/MyDefaultCenteredColumn';
+export { default as MyDefaultSortArrows } from './infinite-scroll-table/MyDefaultSortArrows';
+export { default as MyTableInfinity } from './infinite-scroll-table/MyTableInfinity';
 
-export { default as InputEmailFormItem } from './myInputForm/InputEmailFormItem';
-export { default as InputNumberFormItem } from './myInputForm/InputNumberFormItem';
-export { default as InputPasswordConfirmFormItem } from './myInputForm/InputPasswordConfirmFormItem';
-export { default as InputPasswordFormItem } from './myInputForm/InputPasswordFormItem';
-export { default as InputText } from './myInputForm/InputText';
-export { default as InputTextAreaFormItem } from './myInputForm/InputTextAreaFormItem';
-export { default as InputTextFormItem } from './myInputForm/InputTextFormItem';
-export { default as MySearchInput } from './myInputForm/MySearchInput';
+export { default as InputEmailFormItem } from './input-form/InputEmailFormItem';
+export { default as InputNumberFormItem } from './input-form/InputNumberFormItem';
+export { default as InputPasswordConfirmFormItem } from './input-form/InputPasswordConfirmFormItem';
+export { default as InputPasswordFormItem } from './input-form/InputPasswordFormItem';
+export { default as InputText } from './input-form/InputText';
+export { default as InputTextAreaFormItem } from './input-form/InputTextAreaFormItem';
+export { default as InputTextFormItem } from './input-form/InputTextFormItem';
+export { default as MySearchInput } from './input-form/MySearchInput';
 
-// export { default as InputFormDatePicker } from './myInputFormDatePicker/InputFormDatePicker'; // requires UtilDate util
-// export { default as InputFormRangeDatePicker } from './myInputFormRangeDatePicker/InputFormRangeDatePicker'; // requires UtilDate util
+// export { default as InputFormDatePicker } from './input-form-date-picker/InputFormDatePicker'; // requires UtilDate util
+// export { default as InputFormRangeDatePicker } from './input-form-date-picker/InputFormRangeDatePicker'; // requires UtilDate util
 
-export { default as MyLink } from './myLink/MyLink';
+export { default as MyLink } from './link/MyLink';
+export { default as MyLinkA } from './link/MyLinkA';
 
-export { default as MyLinkA } from './myLinkA/MyLinkA';
+export { default as MyList } from './list/MyList';
 
-export { default as MyList } from './myList/MyList';
+export { default as LoadingIconApp } from './loading-icon/LoadingIconApp';
+export { default as LoadingIconAppAbsolute } from './loading-icon/LoadingIconAppAbsolute';
+export { default as LoadingIconAppCenter } from './loading-icon/LoadingIconAppCenter';
 
-export { default as LoadingIconApp } from './myLoadingIconApp/LoadingIconApp';
-export { default as LoadingIconAppAbsolute } from './myLoadingIconApp/LoadingIconAppAbsolute';
-export { default as LoadingIconAppCenter } from './myLoadingIconApp/LoadingIconAppCenter';
+export { default as MyModal } from './modal/MyModal';
+export { default as MyModalFooter } from './modal/MyModalFooter';
+// export { default as MyMonthPicker } from './month-picker/MyMonthPicker'; // requires UtilDate util
 
-export { default as MyModal } from './myModal/MyModal';
-export { default as MyModalFooter } from './myModal/MyModalFooter';
-// export { default as MyMonthPicker } from './myMonthPicker/MyMonthPicker'; // requires UtilDate util
+export { default as InputOtpFormItem } from './otp-input/InputOtpFormItem';
+export { default as MyOtpInput } from './otp-input/MyOtpInput';
 
-export { default as InputOtpFormItem } from './myOtpInput/InputOtpFormItem';
-export { default as MyOtpInput } from './myOtpInput/MyOtpInput';
+export { default as MyPageHeader } from './page-header/MyPageHeader';
 
-export { default as MyPageHeader } from './myPageHeader/MyPageHeader';
+export { default as MyPagination } from './pagination/MyPagination';
+// export { default as MyProgressBar } from './progress-bar/MyProgressBar'; // requires UtilNumber and UtilString utils
 
-export { default as MyPagination } from './myPagination/MyPagination';
-// export { default as MyProgressBar } from './myProgressBar/MyProgressBar'; // requires UtilNumber and UtilString utils
+export { default as MySegmented } from './segmented/MySegmented';
+export { default as MySegmentedFormItem } from './segmented/MySegmentedFormItem';
 
-export { default as MySegmented } from './mySegmented/MySegmented';
-export { default as MySegmentedFormItem } from './mySegmented/MySegmentedFormItem';
+export { default as MySelect } from './select/MySelect';
+export { default as MySelectFormItem } from './select/MySelectFormItem';
+export { default as MySelectWrapper } from './select/MySelectWrapper';
 
-export { default as MySelect } from './mySelect/MySelect';
-export { default as MySelectFormItem } from './mySelect/MySelectFormItem';
-export { default as MySelectWrapper } from './mySelect/MySelectWrapper';
+export { default as MySpace } from './space/MySpace';
+export { default as MySpaceColumn } from './space/MySpaceColumn';
 
-export { default as MySpace } from './mySpace/MySpace';
-export { default as MySpaceColumn } from './mySpace/MySpaceColumn';
+export { default as MyStatistic } from './statistic/MyStatistic';
+export { default as MyStatisticBold } from './statistic/MyStatisticBold';
 
-export { default as MyStatistic } from './myStatistic/MyStatistic';
-export { default as MyStatisticBold } from './myStatistic/MyStatisticBold';
+export { default as MySwitch } from './switch/MySwitch';
+export { default as MySwitchFormItem } from './switch/MySwitchFormItem';
+export { default as MySwitchFormItemNumVal } from './switch/MySwitchFormItemNumVal';
 
-export { default as MySwitch } from './mySwitch/MySwitch';
-export { default as MySwitchFormItem } from './mySwitch/MySwitchFormItem';
-export { default as MySwitchFormItemNumVal } from './mySwitch/MySwitchFormItemNumVal';
+export { default as MyTable } from './table/MyTable';
 
-export { default as MyTable } from './myTable/MyTable';
+export { default as MyTabsCard } from './tabs/MyTabsCard';
 
-export { default as MyTabsCard } from './myTabs/MyTabsCard';
+export { default as MyTag } from './tag/MyTag';
 
-export { default as MyTag } from './myTag/MyTag';
+export { default as MyText } from './text/MyText';
+export { default as MyTextBold } from './text/MyTextBold';
+export { default as MyTextSecondary } from './text/MyTextSecondary';
+export { default as MyTextTitle } from './text/MyTextTitle';
 
-export { default as MyText } from './myText/MyText';
-export { default as MyTextBold } from './myText/MyTextBold';
-export { default as MyTextSecondary } from './myText/MyTextSecondary';
-export { default as MyTextTitle } from './myText/MyTextTitle';
+export { default as MyTooltip } from './tooltip/MyTooltip';
 
-export { default as MyTooltip } from './myTooltip/MyTooltip';
+export { default as NumberWithBg } from './number-with-bg/NumberWithBg';
+export { default as NumberWithBgAndTitle } from './number-with-bg/NumberWithBgAndTitle';
 
-export { default as NumberWithBg } from './numberWithBg/NumberWithBg';
-export { default as NumberWithBgAndTitle } from './numberWithBg/NumberWithBgAndTitle';
+export { default as PercentInput } from './percent-input/PercentInput';
 
-export { default as PercentInput } from './percentInput/PercentInput';
-
-export { default as SelectTheme } from './selects/SelectTheme';
+export { default as SelectTheme } from './select-theme/SelectTheme';
