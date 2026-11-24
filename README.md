@@ -43,6 +43,15 @@ function App() {
 }
 ```
 
+## Library stylesheet
+
+Import the library's CSS once in your app's entry file to load the shared
+utility classes used by some components.
+
+```js
+import 'my-ui-lib-ubicross/styles.css';
+```
+
 ## Lucide icons
 
 Import the icons you need from `my-ui-lib-ubicross/icons`. Installing the

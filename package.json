@@ -1,6 +1,6 @@
 {
   "name": "my-ui-lib-ubicross",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "description": "My reusable React UI components",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -13,6 +13,7 @@
       "import": "./dist/icons.mjs",
       "require": "./dist/icons.js"
     },
+    "./styles.css": "./dist/App.css",
     "./dist/*": "./dist/*",
     "./package.json": "./package.json"
   },

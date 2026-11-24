@@ -1,54 +1,37 @@
 import { useEffect, useState } from 'react';
 
+const getWindowSize = () => {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+  const isWatch = width <= 300;
+  const isMobile = width <= 768;
+  const isTablet = width > 768 && width <= 1024;
+  const isLaptop = width > 1024 && width <= 1440;
+  const isDesktop = width > 1440 && width <= 1920;
+  const isBigScreen = width > 1920;
+
+  return {
+    width,
+    height,
+    isWatch,
+    isMobile,
+    isTablet,
+    isLaptop,
+    isDesktop,
+    isBigScreen,
+    isSmallScreen: isMobile || isTablet,
+    devicePixelRatio: window.devicePixelRatio || 1,
+  };
+};
+
 export default function useWindowSize() {
-  const [windowSize, setWindowSize] = useState(() => {
-    const getWindowSize = () => {
-      const width = window.innerWidth;
-      const devicePixelRatio = window.devicePixelRatio || 1;
-      const actualWidth = width / devicePixelRatio;
-
-      return {
-        width,
-        height: window.innerHeight,
-        isDesktop: actualWidth > 1440,
-        isLaptop: actualWidth > 1000,
-        isTablet: actualWidth > 500 && actualWidth <= 1000,
-        isMobile: actualWidth <= 500,
-        isTV: actualWidth >= 1000,
-        isWatch: actualWidth <= 300,
-        devicePixelRatio,
-        actualWidth,
-      };
-    };
-
-    return getWindowSize();
-  });
+  const [windowSize, setWindowSize] = useState(getWindowSize);
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(() => {
-        const width = window.innerWidth;
-        const devicePixelRatio = window.devicePixelRatio || 1;
-        const actualWidth = width / devicePixelRatio;
-
-        return {
-          width,
-          height: window.innerHeight,
-          isDesktop: actualWidth > 1440,
-          isLaptop: actualWidth > 1000,
-          isTablet: actualWidth > 500 && actualWidth <= 1000,
-          isMobile: actualWidth <= 500,
-          isTV: actualWidth >= 1000,
-          isWatch: actualWidth <= 300,
-          devicePixelRatio,
-          actualWidth,
-        };
-      });
-    };
+    const handleResize = () => setWindowSize(getWindowSize());
     window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return windowSize;

@@ -6,6 +6,7 @@ export default defineConfig({
   dts: false,
   sourcemap: true,
   clean: true,
+  publicDir: 'src/styles',
   loader: {
     '.js': 'jsx',
   },
