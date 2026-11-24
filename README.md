@@ -65,11 +65,12 @@ choose its own palette and theme algorithm.
 
 ```jsx
 import { ConfigProvider } from 'antd';
-import { uiTheme } from 'my-ui-lib-ubicross';
+import { uiFormConfig, uiTheme } from 'my-ui-lib-ubicross';
 
 function AppRoot() {
   return (
     <ConfigProvider
+      form={uiFormConfig}
       theme={{
         ...uiTheme,
         token: { ...uiTheme.token, colorPrimary: '#7c3aed' },
@@ -80,6 +81,9 @@ function AppRoot() {
   );
 }
 ```
+
+`uiFormConfig` removes form label colons and places an asterisk in the active
+theme's error color after each required label.
 
 ## Utility Usage Across Projects
 
