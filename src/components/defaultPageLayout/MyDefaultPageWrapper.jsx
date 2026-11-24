@@ -1,6 +1,6 @@
 import MyHelmet from '../helmet/MyHelmet';
 import MyFlexVertical from '../flex/MyFlexVertical';
-import MyPageHeader from '../page-header/MyPageHeader';
+import MyPageHeader from '../pageHeader/MyPageHeader';
 
 const MyDefaultPageWrapper = ({
   modal,

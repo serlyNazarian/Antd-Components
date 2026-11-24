@@ -14,7 +14,7 @@ export { default as MyButtonRoundConfirmDelete } from './button/MyButtonRoundCon
 export { default as MyButtonSecondary } from './button/MyButtonSecondary';
 export { default as MyButtonText } from './button/MyButtonText';
 
-export { default as MyButtonCopy } from './button-copy/MyButtonCopy';
+export { default as MyButtonCopy } from './buttonCopy/MyButtonCopy';
 
 export { default as MyCard } from './card/MyCard';
 export { default as MyCardTransparent } from './card/MyCardTransparent';
@@ -22,17 +22,17 @@ export { default as MyCardTransparent } from './card/MyCardTransparent';
 export { default as CheckBoxFormItem } from './checkbox/CheckBoxFormItem';
 export { default as MyCheckBox } from './checkbox/MyCheckBox';
 
-export { default as MyColorPicker } from './color-picker/MyColorPicker';
+export { default as MyColorPicker } from './colorPicker/MyColorPicker';
 
-export { default as CopyableTextBg } from './copyable-text-bg/CopyableTextBg';
+export { default as CopyableTextBg } from './copyableTextBg/CopyableTextBg';
 
-export { default as MyDataEmpty } from './data-empty/MyDataEmpty';
+export { default as MyDataEmpty } from './dataEmpty/MyDataEmpty';
 
-export { default as MyDefaultDropdownButton } from './default-dropdown-button/MyDefaultDropdownButton';
+export { default as MyDefaultDropdownButton } from './defaultDropdownButton/MyDefaultDropdownButton';
 
-export { default as MyDefaultPageHeader } from './default-page-header/MyDefaultPageHeader';
-// export { default as MyDefaultPageLayout } from './default-page-layout/MyDefaultPageLayout'; // requires react-helmet
-// export { default as MyDefaultPageWrapper } from './default-page-layout/MyDefaultPageWrapper'; // requires react-helmet
+export { default as MyDefaultPageHeader } from './defaultPageHeader/MyDefaultPageHeader';
+// export { default as MyDefaultPageLayout } from './defaultPageLayout/MyDefaultPageLayout'; // requires react-helmet
+// export { default as MyDefaultPageWrapper } from './defaultPageLayout/MyDefaultPageWrapper'; // requires react-helmet
 
 export { default as Div } from './div/Div';
 
@@ -50,51 +50,51 @@ export { default as MyFlex } from './flex/MyFlex';
 export { default as MyFlexCenter } from './flex/MyFlexCenter';
 export { default as MyFlexVertical } from './flex/MyFlexVertical';
 
-export { default as FormApp } from './form-app/FormApp';
-// export { default as MyCaptcha } from './google-captcha/MyCaptcha'; // requires react-google-recaptcha
+export { default as FormApp } from './formApp/FormApp';
+// export { default as MyCaptcha } from './googleCaptcha/MyCaptcha'; // requires react-google-recaptcha
 
 export { default as MyIcon } from './icon/MyIcon';
 
-// export { default as IconRound } from './icon-round/IconRound'; // requires UrlHelper util
+// export { default as IconRound } from './iconRound/IconRound'; // requires UrlHelper util
 
 export { default as MyImage } from './image/MyImage';
 
-export { default as MyDefaultCenteredColumn } from './infinite-scroll-table/MyDefaultCenteredColumn';
-export { default as MyDefaultSortArrows } from './infinite-scroll-table/MyDefaultSortArrows';
-export { default as MyTableInfinity } from './infinite-scroll-table/MyTableInfinity';
+export { default as MyDefaultCenteredColumn } from './infiniteScrollTable/MyDefaultCenteredColumn';
+export { default as MyDefaultSortArrows } from './infiniteScrollTable/MyDefaultSortArrows';
+export { default as MyTableInfinity } from './infiniteScrollTable/MyTableInfinity';
 
-export { default as InputEmailFormItem } from './input-form/InputEmailFormItem';
-export { default as InputNumberFormItem } from './input-form/InputNumberFormItem';
-export { default as InputPasswordConfirmFormItem } from './input-form/InputPasswordConfirmFormItem';
-export { default as InputPasswordFormItem } from './input-form/InputPasswordFormItem';
-export { default as InputText } from './input-form/InputText';
-export { default as InputTextAreaFormItem } from './input-form/InputTextAreaFormItem';
-export { default as InputTextFormItem } from './input-form/InputTextFormItem';
-export { default as MySearchInput } from './input-form/MySearchInput';
+export { default as InputEmailFormItem } from './inputForm/InputEmailFormItem';
+export { default as InputNumberFormItem } from './inputForm/InputNumberFormItem';
+export { default as InputPasswordConfirmFormItem } from './inputForm/InputPasswordConfirmFormItem';
+export { default as InputPasswordFormItem } from './inputForm/InputPasswordFormItem';
+export { default as InputText } from './inputForm/InputText';
+export { default as InputTextAreaFormItem } from './inputForm/InputTextAreaFormItem';
+export { default as InputTextFormItem } from './inputForm/InputTextFormItem';
+export { default as MySearchInput } from './inputForm/MySearchInput';
 
-// export { default as InputFormDatePicker } from './input-form-date-picker/InputFormDatePicker'; // requires UtilDate util
-// export { default as InputFormRangeDatePicker } from './input-form-date-picker/InputFormRangeDatePicker'; // requires UtilDate util
+// export { default as InputFormDatePicker } from './inputFormDatePicker/InputFormDatePicker'; // requires UtilDate util
+// export { default as InputFormRangeDatePicker } from './inputFormDatePicker/InputFormRangeDatePicker'; // requires UtilDate util
 
 export { default as MyLink } from './link/MyLink';
 export { default as MyLinkA } from './link/MyLinkA';
 
 export { default as MyList } from './list/MyList';
 
-export { default as LoadingIconApp } from './loading-icon/LoadingIconApp';
-export { default as LoadingIconAppAbsolute } from './loading-icon/LoadingIconAppAbsolute';
-export { default as LoadingIconAppCenter } from './loading-icon/LoadingIconAppCenter';
+export { default as LoadingIconApp } from './loadingIcon/LoadingIconApp';
+export { default as LoadingIconAppAbsolute } from './loadingIcon/LoadingIconAppAbsolute';
+export { default as LoadingIconAppCenter } from './loadingIcon/LoadingIconAppCenter';
 
 export { default as MyModal } from './modal/MyModal';
 export { default as MyModalFooter } from './modal/MyModalFooter';
-// export { default as MyMonthPicker } from './month-picker/MyMonthPicker'; // requires UtilDate util
+// export { default as MyMonthPicker } from './monthPicker/MyMonthPicker'; // requires UtilDate util
 
-export { default as InputOtpFormItem } from './otp-input/InputOtpFormItem';
-export { default as MyOtpInput } from './otp-input/MyOtpInput';
+export { default as InputOtpFormItem } from './otpInput/InputOtpFormItem';
+export { default as MyOtpInput } from './otpInput/MyOtpInput';
 
-export { default as MyPageHeader } from './page-header/MyPageHeader';
+export { default as MyPageHeader } from './pageHeader/MyPageHeader';
 
 export { default as MyPagination } from './pagination/MyPagination';
-// export { default as MyProgressBar } from './progress-bar/MyProgressBar'; // requires UtilNumber and UtilString utils
+// export { default as MyProgressBar } from './progressBar/MyProgressBar'; // requires UtilNumber and UtilString utils
 
 export { default as MySegmented } from './segmented/MySegmented';
 export { default as MySegmentedFormItem } from './segmented/MySegmentedFormItem';
@@ -126,9 +126,9 @@ export { default as MyTextTitle } from './text/MyTextTitle';
 
 export { default as MyTooltip } from './tooltip/MyTooltip';
 
-export { default as NumberWithBg } from './number-with-bg/NumberWithBg';
-export { default as NumberWithBgAndTitle } from './number-with-bg/NumberWithBgAndTitle';
+export { default as NumberWithBg } from './numberWithBg/NumberWithBg';
+export { default as NumberWithBgAndTitle } from './numberWithBg/NumberWithBgAndTitle';
 
-export { default as PercentInput } from './percent-input/PercentInput';
+export { default as PercentInput } from './percentInput/PercentInput';
 
-export { default as SelectTheme } from './select-theme/SelectTheme';
+export { default as SelectTheme } from './selectTheme/SelectTheme';

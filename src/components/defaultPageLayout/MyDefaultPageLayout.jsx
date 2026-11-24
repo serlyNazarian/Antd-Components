@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 import MyFlexVertical from '../flex/MyFlexVertical';
-import MyDefaultPageHeader from '../default-page-header/MyDefaultPageHeader';
+import MyDefaultPageHeader from '../defaultPageHeader/MyDefaultPageHeader';
 
 const MyDefaultPageLayout = ({
   align,

@@ -1,5 +1,5 @@
 import { Form } from 'antd';
-import LoadingIconApp from '../loading-icon/LoadingIconApp';
+import LoadingIconApp from '../loadingIcon/LoadingIconApp';
 
 const FormApp = ({
   loading,
